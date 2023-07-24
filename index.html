@@ -1,15 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sample Website</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Hello, this is a sample website!</h1>
-  <p>Welcome to my sample website powered by JavaScript.</p>
-  <button id="clickButton">Click me!</button>
-  <script src="script.js"></script>
-</body>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div class="flex-parent-element">
+        <div class="flex-child-element">
+            <div id="map"style="width: 1500px; height: 850px;"></div>
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBog6rYNBfK1QLNWzrpHkXQ69O-bM94Fzg&callback=initMap&v=weekly"
+            defer
+            ></script>
+        </div>
+        <div class="flex-child-element"style="width: 400px; word-wrap: break-word; flex: 0 0 400px">
+            <h3 style="margin-left:2px">TO DO:</h3>
+            <ul>
+                <li>Add distance slider</li>
+                <li>Add search location</li>
+                <li>Add drop pin</li>
+                <li>Change get location button</li>
+                <li>Remove 'location found' pop up</li>
+                <li>Add show POIs</li>
+            </ul>
+            <hr style="width:99%;text-align:left;margin-left:1px; margin: right 1px;">
+            <ul>
+                <li>Created by: Tushar Kapoor</li>
+                <a href="https://github.com/Tushar23Kapoor"target="_blank"><li>Github</li></a>
+            </ul>
+        </div>
+      </div>
+  </body>
 </html>
